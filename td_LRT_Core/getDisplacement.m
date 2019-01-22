@@ -20,6 +20,8 @@ sqr_displacement = displacement.^2;
 for i=0:N-1
     displacement_mag(i+1,:) = sqrt(sum(sqr_displacement(i*3+1:i*3+3,:)));
 end
+displacement_mag = displacement_mag .* (10^10);
+
 %------------------------------------------------------------------------
 
 %%
