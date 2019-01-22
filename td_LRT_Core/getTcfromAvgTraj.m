@@ -8,7 +8,7 @@ end
 N = length(ca);
 N_t = length(time_sequence);
 AvgTc = zeros(N,1);
-AvgTc(:) = 0.01;
+AvgTc(:) = 0.2;
 dmag_old = AvgTraj(1:N);
 for i = 1:N_t-1
     dmag = AvgTraj(i*N+1:(i+1)*N);

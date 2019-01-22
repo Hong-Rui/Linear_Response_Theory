@@ -9,7 +9,7 @@ end
 N_t = length(time_sequence);
 N = N_traj/N_t;
 Tc = zeros(N,N_dir);
-Tc(:) = 0.01;
+Tc(:) = 0.2;
 dmag_old = Traj(1:N,:);
 for i = 1:N_t-1
     dmag = Traj(i*N+1:(i+1)*N,:);
